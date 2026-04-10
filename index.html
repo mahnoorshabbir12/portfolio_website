@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahnoor Shabbir | Computer Science Student & Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Mahnoor Shabbir — Computer Science student skilled in React, Node.js, C++, C#, and full-stack web development. Explore projects, skills, and experience.">
+    <meta name="keywords" content="Mahnoor Shabbir, portfolio, computer science, full-stack developer, React, Node.js, MERN stack">
+    <meta name="author" content="Mahnoor Shabbir">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>MS<span class="logo-bracket">/&gt;</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#certificates" class="nav-link">Certificates</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-name animate-on-scroll">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-title-line">
+                    <span class="name-text">Mahnoor</span>
+                    <span class="name-text accent">Shabbir</span>
+                </span>
+            </h1>
+            <div class="hero-role animate-on-scroll">
+                <span class="role-prefix">&gt;</span>
+                <span class="typewriter" id="typewriter"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description animate-on-scroll">
+                Computer Science undergraduate with a strong foundation in <strong>Full-Stack Development</strong>,
+                passionate about building scalable backend solutions and contributing to impactful projects.
+            </p>
+            <div class="hero-actions animate-on-scroll">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="ph ph-rocket-launch"></i>
+                    View Projects
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="ph ph-envelope"></i>
+                    Get in Touch
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Certificates</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual animate-on-scroll">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">portfolio.js</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Mahnoor Shabbir"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"CS Student"</span>,
+  <span class="code-prop">stack</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>,
+          <span class="code-string">"Express"</span>, <span class="code-string">"MongoDB"</span>],
+  <span class="code-prop">passion</span>: <span class="code-string">"Backend Development"</span>,
+  <span class="code-prop">location</span>: <span class="code-string">"Lahore, Pakistan"</span>,
+  <span class="code-method">buildSomethingGreat</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Let's collaborate! 🚀"</span>;
+  }
+};</code></pre>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p>
+                        I'm a <strong>Computer Science</strong> undergraduate at the <strong>University of Engineering and Technology, Lahore</strong>
+                        with a deep interest in building software that makes a difference. My journey in tech began with C++ and has
+                        expanded into Full-Stack Web Development with the <strong>MERN Stack</strong>.
+                    </p>
+                    <p>
+                        I enjoy solving complex problems, designing efficient database systems, and building scalable
+                        backend architectures. Whether it's a hospital management system, a game, or a full-stack web app —
+                        I approach every project with curiosity and commitment to quality.
+                    </p>
+                    <p>
+                        When I'm not coding, I'm exploring new technologies, improving my problem-solving skills,
+                        and looking for ways to contribute to meaningful projects.
+                    </p>
+                    <div class="about-info-cards">
+                        <div class="info-card">
+                            <i class="ph ph-map-pin"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Lahore, Punjab, Pakistan</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="ph ph-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Education</span>
+                                <span class="info-value">BS Computer Science (UET)</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="ph ph-heart"></i>
+                            <div>
+                                <span class="info-label">Interests</span>
+                                <span class="info-value">Backend Dev & System Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    <div class="image-frame">
+                        <img src="profile.jpg" alt="Mahnoor Shabbir" class="profile-photo">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">02.</span> Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <i class="ph ph-code"></i>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="ph ph-file-cpp"></i> C++</span>
+                        <span class="skill-tag"><i class="ph ph-file-code"></i> C#</span>
+                        <span class="skill-tag"><i class="ph ph-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="ph ph-file-js"></i> JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <i class="ph ph-globe"></i>
+                        </div>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="ph ph-atom"></i> React</span>
+                        <span class="skill-tag"><i class="ph ph-tree-structure"></i> Node.js</span>
+                        <span class="skill-tag"><i class="ph ph-plugs-connected"></i> Express</span>
+                        <span class="skill-tag"><i class="ph ph-file-html"></i> HTML</span>
+                        <span class="skill-tag"><i class="ph ph-file-css"></i> CSS</span>
+                        <span class="skill-tag"><i class="ph ph-paint-brush"></i> Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <i class="ph ph-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="ph ph-table"></i> MySQL</span>
+                        <span class="skill-tag"><i class="ph ph-leaf"></i> MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <i class="ph ph-wrench"></i>
+                        </div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="ph ph-github-logo"></i> GitHub</span>
+                        <span class="skill-tag"><i class="ph ph-monitor"></i> Visual Studio</span>
+                        <span class="skill-tag"><i class="ph ph-code-block"></i> VS Code</span>
+                        <span class="skill-tag"><i class="ph ph-database"></i> MySQL Workbench</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">03.</span> Featured Projects
+            </h2>
+
+            <!-- Attendly - Featured -->
+            <div class="project-featured animate-on-scroll">
+                <div class="project-featured-content">
+                    <span class="project-label">⭐ Featured Project</span>
+                    <h3 class="project-title">Attendly</h3>
+                    <p class="project-subtitle">Full-Stack Attendance Management System</p>
+                    <div class="project-description-card">
+                        <p>A comprehensive attendance management system built with the <strong>MERN Stack</strong>.
+                        Features JWT authentication, secure sessions, Redux Toolkit state management,
+                        and REST APIs for real-time attendance operations including check-in/out and correction tickets.</p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Redux Toolkit</span>
+                        <span>JWT Auth</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://mahnoorshabbir-attendly.vercel.app" target="_blank" rel="noopener" class="project-link">
+                            <i class="ph ph-arrow-square-out"></i> Live Demo
+                        </a>
+                        <a href="https://www.linkedin.com/in/mahnoorshabbir/" target="_blank" rel="noopener" class="project-link">
+                            <i class="ph ph-linkedin-logo"></i> LinkedIn Post
+                        </a>
+                    </div>
+                </div>
+                <div class="project-featured-visual">
+                    <div class="project-video-container">
+                        <div class="video-browser-frame">
+                            <div class="video-browser-header">
+                                <div class="code-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="video-url">mahnoorshabbir-attendly.vercel.app</span>
+                            </div>
+                            <div class="iframe-embed-wrapper">
+                                <iframe
+                                    src="https://mahnoorshabbir-attendly.vercel.app/"
+                                    class="attendly-iframe"
+                                    title="Attendly - Attendance Management System"
+                                    loading="lazy"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <div class="projects-grid">
+                <!-- CureWell -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <i class="ph ph-folder-notch-open project-folder-icon"></i>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mahnoorshabbir12" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card-title">CureWell</h3>
+                    <p class="project-card-subtitle">Hospital Management System</p>
+                    <p class="project-card-desc">
+                        Command-line Hospital Management System simulating real-world operations.
+                        Role-based access for Admin, Staff, and Patients with full CRUD functionality
+                        and basic indexing for enhanced search efficiency.
+                    </p>
+                    <div class="project-card-tech">
+                        <span>C++</span>
+                        <span>File Handling</span>
+                        <span>Arrays</span>
+                    </div>
+                </div>
+
+                <!-- Vortex Escape -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <i class="ph ph-folder-notch-open project-folder-icon"></i>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mahnoorshabbir12" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card-title">Vortex Escape</h3>
+                    <p class="project-card-subtitle">Survival & Collection Game</p>
+                    <p class="project-card-desc">
+                        A survival and collection-based game with two progressively harder levels.
+                        Features gravity, firing, jump mechanics, platform and lift systems,
+                        animations, random enemy spawns, and a functional health system.
+                    </p>
+                    <div class="project-card-tech">
+                        <span>C++</span>
+                        <span>Game Logic</span>
+                        <span>Animation</span>
+                    </div>
+                </div>
+
+                <!-- Campus Lodge -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <i class="ph ph-folder-notch-open project-folder-icon"></i>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mahnoorshabbir12" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card-title">Campus Lodge</h3>
+                    <p class="project-card-subtitle">Hostel Management System</p>
+                    <p class="project-card-desc">
+                        Robust system managing student registrations, room assignments, fee tracking,
+                        announcements, and mess functionalities. Uses triggers, stored procedures,
+                        and views for automated updates and efficient data handling.
+                    </p>
+                    <div class="project-card-tech">
+                        <span>C#</span>
+                        <span>WinForms</span>
+                        <span>MySQL</span>
+                        <span>OOP</span>
+                    </div>
+                </div>
+
+                <!-- Space Impact -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <i class="ph ph-folder-notch-open project-folder-icon"></i>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mahnoorshabbir12" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card-title">Space Impact</h3>
+                    <p class="project-card-subtitle">CLI Survival Shooter Game</p>
+                    <p class="project-card-desc">
+                        CLI-based survival shooter with modular BL, DL, and UI layer architecture.
+                        Features multiple levels, health system, firing logic, real-time collision detection,
+                        and an extensible framework supporting new enemies and mechanics.
+                    </p>
+                    <div class="project-card-tech">
+                        <span>C#</span>
+                        <span>OOP</span>
+                        <span>Interfaces</span>
+                        <span>Frameworks</span>
+                    </div>
+                </div>
+
+                <!-- NovellaMart -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <i class="ph ph-folder-notch-open project-folder-icon"></i>
+                        <div class="project-card-links">
+                            <a href="https://www.linkedin.com/posts/mahnoorshabbir_datastructures-algorithms-softwareengineering-activity-7424789016061042688-9Z80?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEvjRnkBtZL7kje_Nl-qbrIcrk2_iSoBa8E" target="_blank" rel="noopener" aria-label="LinkedIn Post"><i class="ph ph-linkedin-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card-title">NovellaMart</h3>
+                    <p class="project-card-subtitle">E-Commerce Web Application</p>
+                    <p class="project-card-desc">
+                        Modern e-commerce web app built with ASP.NET and Blazor using component-based architecture.
+                        Features product catalog, user authentication, shopping cart, and order management
+                        with a layered architecture (BL, DL, UI) for scalability.
+                    </p>
+                    <div class="project-card-tech">
+                        <span>ASP.NET</span>
+                        <span>Blazor</span>
+                        <span>C#</span>
+                        <span>OOP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt" id="education">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">04.</span> Education
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>University of Engineering and Technology</h3>
+                            <span class="timeline-date">2024 — 2028</span>
+                        </div>
+                        <p class="timeline-subtitle">Main Campus, Lahore</p>
+                        <p class="timeline-degree">Bachelor of Science in Computer Science <span class="badge-progress">In Progress</span></p>
+                        
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Students Inn College of Science</h3>
+                            <span class="timeline-date">2020 — 2022</span>
+                        </div>
+                        <p class="timeline-subtitle">Faisalabad</p>
+                        <p class="timeline-degree">FSc. Pre-Medical (BISE Faisalabad)</p>
+                        <div class="timeline-metric">
+                            <span class="metric-label">Percentage</span>
+                            <div class="metric-bar-wrap">
+                                <div class="metric-bar" style="--progress: 95.7%;">
+                                    <span class="metric-value">95.7%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Blessing Home High School</h3>
+                            <span class="timeline-date">2016 — 2020</span>
+                        </div>
+                        <p class="timeline-subtitle">Faisalabad</p>
+                        <p class="timeline-degree">Matriculation in Science (BISE Faisalabad)</p>
+                        <div class="timeline-metric">
+                            <span class="metric-label">Percentage</span>
+                            <div class="metric-bar-wrap">
+                                <div class="metric-bar" style="--progress: 94%;">
+                                    <span class="metric-value">94%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="section" id="certificates">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">05.</span> Certificates
+            </h2>
+            <p class="certificates-subtitle animate-on-scroll">Professional certifications that validate my skills and continuous learning journey.</p>
+            <div class="certificates-grid">
+                <!-- freeCodeCamp -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-glow"></div>
+                    <div class="cert-card-header">
+                        <div class="cert-issuer-logo freecodecamp">
+                            <i class="ph ph-campfire"></i>
+                        </div>
+                        <div class="cert-issuer-info">
+                            <span class="cert-issuer-name">freeCodeCamp</span>
+                            <span class="cert-date"><i class="ph ph-calendar-blank"></i> July 15, 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="cert-title">Back End Development and APIs</h3>
+                    <p class="cert-desc">Developer Certification representing approximately <strong>300 hours</strong> of coursework covering Node.js, Express, MongoDB, and RESTful API development.</p>
+                    <div class="cert-footer">
+                        <span class="cert-badge"><i class="ph ph-seal-check"></i> Verified</span>
+                        <a href="https://freecodecamp.org/certification/fcc-87c73405-057f-4590-b315-441062a09219/back-end-development-and-apis" target="_blank" rel="noopener" class="cert-link">
+                            <i class="ph ph-arrow-square-out"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Postman -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-glow"></div>
+                    <div class="cert-card-header">
+                        <div class="cert-issuer-logo postman">
+                            <i class="ph ph-paper-plane-right"></i>
+                        </div>
+                        <div class="cert-issuer-info">
+                            <span class="cert-issuer-name">Postman</span>
+                            <span class="cert-date"><i class="ph ph-calendar-blank"></i> July 11, 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="cert-title">API Fundamentals Student Expert</h3>
+                    <p class="cert-desc">Certified expertise in API fundamentals, including RESTful API concepts, request methods, authentication strategies, and Postman workspace proficiency.</p>
+                    <div class="cert-footer">
+                        <span class="cert-badge"><i class="ph ph-seal-check"></i> Verified</span>
+                        <a href="https://postman.com" target="_blank" rel="noopener" class="cert-link">
+                            <i class="ph ph-arrow-square-out"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HackerRank SQL Basic -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-glow"></div>
+                    <div class="cert-card-header">
+                        <div class="cert-issuer-logo hackerrank">
+                            <i class="ph ph-code"></i>
+                        </div>
+                        <div class="cert-issuer-info">
+                            <span class="cert-issuer-name">HackerRank</span>
+                            <span class="cert-date"><i class="ph ph-calendar-blank"></i> March 24, 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="cert-title">SQL (Basic)</h3>
+                    <p class="cert-desc">Skill certification validating proficiency in fundamental SQL operations including SELECT queries, filtering, aggregation, and basic joins.</p>
+                    <div class="cert-footer">
+                        <span class="cert-badge"><i class="ph ph-seal-check"></i> Verified</span>
+                        <a href="https://www.hackerrank.com/certificates/F2E563B96543" target="_blank" rel="noopener" class="cert-link">
+                            <i class="ph ph-arrow-square-out"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HackerRank SQL Intermediate -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-card-glow"></div>
+                    <div class="cert-card-header">
+                        <div class="cert-issuer-logo hackerrank">
+                            <i class="ph ph-code"></i>
+                        </div>
+                        <div class="cert-issuer-info">
+                            <span class="cert-issuer-name">HackerRank</span>
+                            <span class="cert-date"><i class="ph ph-calendar-blank"></i> May 5, 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="cert-title">SQL (Intermediate)</h3>
+                    <p class="cert-desc">Advanced SQL certification covering complex joins, subqueries, window functions, stored procedures, and database optimization techniques.</p>
+                    <div class="cert-footer">
+                        <span class="cert-badge"><i class="ph ph-seal-check"></i> Verified</span>
+                        <a href="https://www.hackerrank.com/certificates/75949F8E8DF2" target="_blank" rel="noopener" class="cert-link">
+                            <i class="ph ph-arrow-square-out"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">06.</span> Get In Touch
+            </h2>
+            <div class="contact-wrapper animate-on-scroll">
+                <div class="contact-text">
+                    <h3>Let's Build Something Together</h3>
+                    <p>I'm currently looking for opportunities where I can contribute, learn, and grow.
+                    Whether you have a question, a project idea, or just want to say hi — my inbox is always open!</p>
+                </div>
+                <div class="contact-cards">
+                    <a href="mailto:mahnoormalik1213@outlook.com" class="contact-card">
+                        <i class="ph ph-envelope-simple"></i>
+                        <span class="contact-card-label">Email</span>
+                        <span class="contact-card-value">mahnoormalik1213@outlook.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mahnoorshabbir/" target="_blank" rel="noopener" class="contact-card">
+                        <i class="ph ph-linkedin-logo"></i>
+                        <span class="contact-card-label">LinkedIn</span>
+                        <span class="contact-card-value">mahnoorshabbir</span>
+                    </a>
+                    <a href="https://github.com/mahnoorshabbir12" target="_blank" rel="noopener" class="contact-card">
+                        <i class="ph ph-github-logo"></i>
+                        <span class="contact-card-label">GitHub</span>
+                        <span class="contact-card-value">mahnoorshabbir12</span>
+                    </a>
+                    <a href="tel:+923281139250" class="contact-card">
+                        <i class="ph ph-phone"></i>
+                        <span class="contact-card-label">Phone</span>
+                        <span class="contact-card-value">+92-328-1139250</span>
+                    </a>
+                </div>
+                <a href="mailto:mahnoormalik1213@outlook.com" class="btn btn-primary btn-lg">
+                    <i class="ph ph-paper-plane-tilt"></i>
+                    Say Hello
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">Designed & Built by <strong>Mahnoor Shabbir</strong></p>
+                <div class="footer-social">
+                    <a href="https://github.com/mahnoorshabbir12" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/mahnoorshabbir/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="mailto:mahnoormalik1213@outlook.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2025 Mahnoor Shabbir. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
