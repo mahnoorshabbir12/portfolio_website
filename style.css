@@ -1003,12 +1003,14 @@ ul, ol { list-style: none; }
     line-height: 1.8;
 }
 .contact-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
     margin-bottom: 36px;
 }
 .contact-card {
+    width: calc(50% - 8px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1112,7 +1114,7 @@ ul, ol { list-style: none; }
     .skills-grid { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
     .certificates-grid { grid-template-columns: 1fr; }
-    .contact-cards { grid-template-columns: 1fr; }
+    .contact-card { width: 100%; }
     .hero-stats { flex-direction: column; gap: 16px; }
     .stat-divider { width: 40px; height: 1px; }
     .profile-placeholder { width: 200px; height: 240px; }
