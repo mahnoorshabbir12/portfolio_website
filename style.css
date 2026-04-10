@@ -914,6 +914,10 @@ ul, ol { list-style: none; }
     background: rgba(45, 212, 168, 0.12);
     color: var(--green);
 }
+.cert-issuer-logo.datacamp {
+    background: rgba(3, 239, 98, 0.12);
+    color: #03EF62;
+}
 .cert-issuer-info {
     display: flex;
     flex-direction: column;
@@ -982,6 +986,9 @@ ul, ol { list-style: none; }
 .certificates-grid .animate-on-scroll:nth-child(2) { transition-delay: 0.1s; }
 .certificates-grid .animate-on-scroll:nth-child(3) { transition-delay: 0.15s; }
 .certificates-grid .animate-on-scroll:nth-child(4) { transition-delay: 0.2s; }
+.certificates-grid .animate-on-scroll:nth-child(5) { transition-delay: 0.25s; }
+.certificates-grid .animate-on-scroll:nth-child(6) { transition-delay: 0.3s; }
+.certificates-grid .animate-on-scroll:nth-child(7) { transition-delay: 0.35s; }
 
 /* ========================================
    CONTACT
