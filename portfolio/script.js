@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typewriterEl = document.getElementById('typewriter');
     const roles = [
         'Computer Science Student',
-        'Full-Stack Developer',
+        'Full-Stack Developer | AI Enthusiast',
         'MERN Stack Enthusiast',
         'Backend Development Lover',
         'Problem Solver'
